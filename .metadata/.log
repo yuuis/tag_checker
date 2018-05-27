@@ -1,0 +1,12 @@
+!SESSION 2018-01-12 15:28:48.046 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2018-01-12 15:29:10.547
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2018-01-12 15:29:10.547
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'

@@ -1,0 +1,54 @@
+.well {
+  width:450px;
+  height:400px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /*bottom: 0px;*/
+  left: 0px;
+  margin: auto;
+}
+.panel {
+  width:400px;
+  height: 100px;
+}
+
+#memoryArea {
+  width:100px;
+  height: 30px;
+  text-align: left;
+  float: left;
+}
+
+#foumulaArea {
+  width:100px;
+  height: 30px;
+  text-align: right;
+  float: right;
+}
+#field {
+  width:350px;
+  height: 50px;
+  text-align: right;
+  float: right; 
+  font-size: 30px;
+}
+
+#calc {
+  width:50px;
+  height:700px;
+}
+
+.btn {
+  width:80px;
+  height: 40px;
+}
+form input[type="button"] {
+  font-size: 20px;
+}
+
+.btn-warning {
+  height:160px;
+}
+
+
