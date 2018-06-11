@@ -62,8 +62,6 @@ return [
             'host' => '127.0.0.1',
             'port' => '3306',
             'database' => 'Advertisement',
-            // 'database' => 'AdvertisementTest',
-            // 'database' => 'AdvertisementTest2',
             'username' => 'root',
             'password' => 'password',
             'unix_socket' => '',

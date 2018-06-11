@@ -23,9 +23,7 @@ class TagCheckController extends Controller {
         $domain = str_replace("/", "", $domain);
 
         $command = "/var/www/html/source.sh $url $trackingCode >> /var/www/html/hoge.txt";
-        // $command = "sudo /home/ec2-user/.pyenv/shims/python /var/www/html/executable/tag_checker.py". " ". $url. " ". $trackingCode . " > /tmp/boke.txt";
         exec($command, $hoge, $fuga);
-        // \Log::info(__METHOD__. "---output--->" .print_r($hoge)."---status--->".$fuga);
 
         $mailLogic = new \App\Http\Logic\Mail\MailLogic;
         $mailLogic->sentMail($to, $domain);
