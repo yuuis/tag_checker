@@ -20,15 +20,14 @@ class TagCheckController extends Controller {
         $domain = str_replace("http://www.", "", $domain);
         $domain = str_replace("http://", "", $domain);
         $domain = str_replace("https:/", "", $domain);
-        $domain = str_replace("/", "", $domain);
+    $domain = str_replace("/", "", $domain);
 
         $command = "/var/www/html/source.sh $url $trackingCode >> /var/www/html/hoge.txt";
         exec($command, $hoge, $fuga);
 
         $mailLogic = new \App\Http\Logic\Mail\MailLogic;
         $mailLogic->sentMail($to, $domain);
-        
-        \Log::debug(__METHOD__. "メールを送信しました");
+            
         $result = new \App\Http\Logic\LogicResultDTO();
         $result->setResults("メールを送信しました");
         return view("tagcheck/result", $result->getForView($request));

@@ -2,7 +2,6 @@
 @section('content')
 
 <section>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript">
       // ダイアログオブジェクト
       var dialog = {};
@@ -121,7 +120,7 @@
     <form action="/tagcheck" method="post">
       {{ csrf_field() }}
         <div>
-            <label>URL</label>
+            <label>ドメイン</label>
             <input type="text" name="url" id="url" class="form-control" value="">
         </div>
         <br>
@@ -136,7 +135,7 @@
         </div>
         <br><br>
         <div id="content"></div>
-        <button type="submit" class="btn btn-primary" onclick="dialogShowType2()">送信する</button>
+        <button type="submit" class="btn btn-primary" onclick="dialogShowType2()">調べる</button>
     </form>
     </div>
 
