@@ -20,7 +20,7 @@ class TagCheckController extends Controller {
         $domain = str_replace("http://www.", "", $domain);
         $domain = str_replace("http://", "", $domain);
         $domain = str_replace("https:/", "", $domain);
-    $domain = str_replace("/", "", $domain);
+        $domain = str_replace("/", "", $domain);
 
         $command = "/var/www/html/source.sh $url $trackingCode >> /var/www/html/hoge.txt";
         exec($command, $hoge, $fuga);

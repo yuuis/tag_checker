@@ -37,3 +37,4 @@ class ValidateLogic extends \App\Http\Logic\BaseLogic {
         }
         return $resultDTO;
     }
+}
